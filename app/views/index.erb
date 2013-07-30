@@ -1,0 +1,14 @@
+<div class="container">
+	<% if current_user %>
+    <table>
+		<% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.email %></td>
+    </tr>
+    <% end %>
+	<% else %>
+<h1>Welcome to a website where the only purpose is to sign in and sign out!</h1>
+<% end %>
+</div>
+
